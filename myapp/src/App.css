@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  margin-top: 3px;
+  background-color: teal;
+  background-size: cover;
 }
 
 .App-logo {
@@ -10,6 +13,8 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+    margin-top: 5px;
+    padding: 5px;
   }
 }
 
@@ -22,6 +27,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-top: 4px;
 }
 
 .App-link {
@@ -36,4 +42,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.activitybox {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  max-height: fit-content;
+  color: white;
+
+}
+
+.fetchButton {
+  margin-top:40px;
+  padding: 3px;
+}
+
+.activity {
+  background-color: slategray;
+}
+
+strong {
+  color: yellow;
 }

@@ -5,6 +5,7 @@ const initialState = {
     loading: false,
     activity:"null",
     type: "null",
+    participants: "null",
     error: ""
   };
 export const appReducer = (state = initialState, action ) => {
@@ -18,9 +19,9 @@ export const appReducer = (state = initialState, action ) => {
       };
     case SHOW_NEW_ACTIVITY:
       return {
-        
-        activity: action.payload,
-        type: "",
+        activity:  action.payload,
+        type: action.payload2,
+        participants: action.payload3,
         isFetching: false,
       };
     default:

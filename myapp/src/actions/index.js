@@ -17,11 +17,16 @@ export const getActivity = () => (dispatch) => {
     .get(baseURL, {
       headers,
     })
-    .then((response) => {
-      console.log( response );
+    .then(results  => {
+      console.log( "results", results.data );
       dispatch({
         type: SHOW_NEW_ACTIVITY,
-        payload:[ ...response.data.activity ]
+        payload: [ results.data.activity],
+        payload2: results.data.type,
+        payload3: results.data.participants
+        // payload2: results.data.type,
+        // numOfPeople: results.data.participants
+  
    });
     })
     .catch((err) => {
